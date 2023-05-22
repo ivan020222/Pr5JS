@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr5</title>
+</head>
+<body>
+    <script language="JavaScript" type="text/javascript">
+        var x_min = eval(prompt('Введіть мінімальне значення аргументу х: '));
+        var x_max = eval(prompt('Введіть максимальне значення аргументу х: '));
+        var h = eval(prompt('Введіть крок зміни аргументу х: '));
+        var x, U;
+
+        document.write('<h4>РОЗГАЛУЖЕНИЙ ОБЧИСЛЮВАЛЬНИЙ ПРОЦЕС</h4>');
+        if(x_min && x_max && x_min<=x_max){
+            document.write('<p>Обчислення значень функції при зміні аргументу х від '
+            + x_min + ' до ' + x_max
+            + ' із кроком ' + h + '</p>');
+        }else{
+            document.write('<p>Некоректні дані</p>');
+        }
+        
+        for(x = x_min; x <= x_max; x += h){
+            with(Math){
+                if(x<0){
+                    U = sin(x) - tan(x);
+                }else if(x==0){
+                    U = 0;
+                }else if(x>0){
+                    U = pow((1/tan(x)), 3);
+                }
+            }
+            document.write('<p>x = ' + x + '; U = ' + U + '</p>');
+        }
+
+    </script>
+</body>
+</html>

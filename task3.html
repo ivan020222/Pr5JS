@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr5</title>
+</head>
+<body>
+    <script language="JavaScript" type="text/javascript">
+         function randomizer(){
+            var y = Math.random();
+            let s = document.querySelector('span');
+            s.textContent = y;
+        }
+        with(Math){
+           
+            document.write('<h4>КОНСТАНТИ:</h4>');
+            document.write('<ol>'
+                +'<li>Значення константи е = ' + E
+                +'</li><li>Значення константи π = ' + PI
+                +'</li><li>Десятковий логарифм постійної Ейлера (е) = ' + LOG10E
+                +'</li><li>Двійковий логарифм постійної Ейлера (е) = ' + LOG2E
+                +'</li><li>Натуральний логарифм числа 10 = ' + LN10
+                +'</li><li>Натуральний логарифм числа 2 = ' + LN2
+                +'</li><li>Корінь квадратний із двох = ' + SQRT2
+                +'</li><li>Корінь квадратний з однієї другої = ' + SQRT1_2 + '</li></ol>');
+            document.write('<h4>ФУНКЦІЇ:</h4>');
+            document.write('<ol>'
+                +'<li>Косинус 180 градусів (π радіан): y = ' + cos(PI)
+                +'</li><li>Результат обчислення арккосинуса нуля : y = ' + acos(0)
+                +'</li><li>Результат обчислення синуса нуля радіан: y = ' + sin(0)
+                +'</li><li>Синус 90 градусів (π /2 радіан): y = ' + sin(PI/2)
+                +'</li><li>Результат обчислення арксинуса одиниці: у = ' + asin(1) + '</li></ol>');
+            document.write('<h4>ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ:</h4>');
+            document.write('<p>Формування випадкових чисел в інтервалі [0;1]: y = <span>' + random() +'</span></p>');
+            document.write('<input type="button" onclick="randomizer();" value="Генерувати">');
+        }
+    </script>
+</body>
+</html>

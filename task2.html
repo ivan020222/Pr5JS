@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr5</title>
+    <style>
+        input{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script language="JavaScript" type="text/javascript">
+        function ShowVysliv(autor_number) {
+            var vysliv;
+            switch (autor_number) {
+                case 1:
+                    vysliv = 'Ті, що виїздять за море, міняють небо, а не душу.';
+                    break;
+                case 2:
+                    vysliv = 'Для нас дорогі батьки, дорогі діти, близькі, родичі;'+
+                    ' але всі уявлення про любов до чого-небудь поєднані в одному слові «вітчизна».';
+                    break;
+                case 3:
+                    vysliv = 'Мова — це глибина тисячоліть.';
+                    break;
+                case 4:
+                    vysliv = 'Той, хто в біді кидає свій народ, стає його ворогом.';
+                    break;
+                case 5:
+                    vysliv = 'Де немає свободи, там немає і вітчизни.';
+                    break;
+            }
+
+            alert(vysliv);
+        }
+        document.write('<h1>Про батьківщину та патріотизм. Про рідну мову, українську пісню.</h1>'+
+            '<input type="button" onclick="ShowVysliv(1);" value="Горацій">'+
+            '<input type="button" onclick="ShowVysliv(2);" value="Цицерон">'+
+            '<input type="button" onclick="ShowVysliv(3);" value="М. Шумило">'+
+            '<input type="button" onclick="ShowVysliv(4);" value="Ч. Айтматов">'+
+            '<input type="button" onclick="ShowVysliv(5);" value="П. Гольбах">');
+    </script>
+</body>
+
+</html>
